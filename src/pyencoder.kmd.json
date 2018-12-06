@@ -1,0 +1,76 @@
+{
+  "name": "pyencoder",
+  "version": "0.0.1-dev",
+  "kurentoVersion": "^6.0.0",
+  "imports": [
+    {
+      "name": "core",
+      "version": "^6.0.0",
+      "mavenVersion": "[6.0.0,7.0.0-SNAPSHOT)",
+      "npmVersion": ">=6.0.0 <7.0.0"
+    },
+    {
+      "name": "elements",
+      "version": "^6.0.0",
+      "mavenVersion": "[6.0.0,7.0.0-SNAPSHOT)",
+      "npmVersion": ">=6.0.0 <7.0.0"
+    },
+    {
+      "name": "filters",
+      "version": "^6.0.0",
+      "mavenVersion": "[6.0.0,7.0.0-SNAPSHOT)",
+      "npmVersion": ">=6.0.0 <7.0.0"
+    }
+  ],
+  "code": {
+    "api": {
+      "java": {
+        "mavenGroupId": "org.kurento.module",
+        "mavenArtifactId": "pyencoder",
+        "mavenVersion": "0.0.1-SNAPSHOT",
+        "packageName": "org.kurento.module.pyencoder"
+      },
+      "js": {
+        "nodeName": "kurento-module-pyencoder",
+        "npmVersion": "0.0.1",
+        "npmDescription": ""
+      }
+    },
+    "implementation": {
+      "cppNamespace": "kurento::module::pyencoder",
+      "lib": "libkmspyencoder"
+    }
+  },
+  "remoteClasses": [
+    {
+      "name": "PyEncoder",
+      "doc": "PyEncoder interface. Documentation about the module",
+      "extends": "OpenCVFilter",
+      "constructor": {
+        "params": [
+          {
+            "name": "mediaPipeline",
+            "doc": "the parent :rom:cls:`MediaPipeline`",
+            "type": "MediaPipeline"
+          }
+        ],
+        "doc": "Create an element"
+      },
+      "methods": [
+        {
+          "params": [
+            {
+              "name": "enabled",
+              "doc": "Flag filter enabled or not.",
+              "type": "int"
+            }
+          ],
+          "name": "setEnabled",
+          "doc": "Configures whether filter enabled or not. 0 - disabled, 1 - enabled."
+        }
+      ]
+    }
+  ],
+  "complexTypes": [],
+  "events": []
+}
