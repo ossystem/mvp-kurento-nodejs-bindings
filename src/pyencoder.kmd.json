@@ -67,6 +67,17 @@
           ],
           "name": "setEnabled",
           "doc": "Configures whether filter enabled or not. 0 - disabled, 1 - enabled."
+        },
+        {
+          "params": [
+            {
+              "name": "sessionid",
+              "doc": "Session id",
+              "type": "String"
+            }
+          ],
+          "name": "setSessionId",
+          "doc": "Sets session id"
         }
       ]
     }
